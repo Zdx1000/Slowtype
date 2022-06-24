@@ -1,2 +1,2 @@
 # Slowtype
-Um simples SlowType explicando como e efeito um Clear no discord.
+Um simples SlowType explicando de como é efeito um Clear no discord.
