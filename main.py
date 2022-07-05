@@ -27,14 +27,16 @@ def slowtype(text, sec):
 
 slowtype(f'''{cinza}# Importações
 {laranja}{brilho}from {branco}discord.ext {laranja}import {branco}commands
-
 {branco}token = {azul}input{branco}({verde}'Digite seu token: '{branco}) {cinza}# Adquirindo um Token
 {branco}prefix = {azul}input{branco}({verde}'DIgite seu Prefix: '{branco}) {cinza}# Definindo o Prefixo{branco}
-
 bot = commands.Bot({vermelho}command_prefix{branco}=prefix, {vermelho}self_bot{branco}={laranja}True{branco}) {cinza} # Implementando o Prefixo definido{branco}
 bot.remove_command({verde}"help"{branco}){cinza} # Removendo função 'Help'
-
-{cinza}# Ação do bot
+{amarelo}@bot.event{branco}()
+{laranja}async def {amarelo_claro}on _ready{branco}():
+    {azul}print{branco}({verde}"""{branco}
+  {azul}▒{branco}█▀▀█ █{azul}░░ {branco}█▀▀█ {branco}█▀▀ █{azul}░{branco}█ 　 █▀▀ █▀▀█ █{azul}░░{branco}█
+  {azul}▒{branco}█▀▀▄ █{azul}░░ {branco}█▄▄█ {branco}█{azul}░░ {branco}█▀{branco}▄ 　 ▀▀█ █{azul}░░{branco}█ █▄▄█
+  {azul}▒{branco}█▄▄█ ▀▀▀ {branco}▀{azul}░░{branco}▀ ▀▀▀ ▀{azul}░{branco}▀ 　 ▀▀▀ █▀▀▀ ▄▄▄█ {vermelho}By{branco}: Black spy{cinza}#0001{verde}"""{branco})
 {amarelo}@bot.command{branco}()
 {laranja}async def {amarelo_claro}clear{branco}(ctx{laranja},{branco} limit: {azul}int{branco}={laranja}None{branco}): {cinza} # Definindo ação a ser efetuada{branco}
     sucedido = {azul}0 {cinza} # Contagem de mensagens apagadas
@@ -47,5 +49,24 @@ bot.remove_command({verde}"help"{branco}){cinza} # Removendo função 'Help'
             {laranja}except{branco}:
                 fracassado += {azul}1 {cinza}# [Mal sucedido]
 
-{branco}bot.run(token{laranja}, {vermelho}bot{branco}={laranja}False{branco}){cinza} # A função de inicialização em Bot=Human''', 4)
+{branco}bot.run(token{laranja}, {vermelho}bot{branco}={laranja}False{branco}){cinza} # A função de inicialização em Bot=Human''', 0.2)
 input('')
+os.system('cls' if os.name == 'nt' else 'clear')
+slowtype(f'''
+
+  {azul}▒{branco}█▀▀█ █{azul}░░ {branco}█▀▀█ {branco}█▀▀ █{azul}░{branco}█ 　 █▀▀ █▀▀█ █{azul}░░{branco}█
+  {azul}▒{branco}█▀▀▄ █{azul}░░ {branco}█▄▄█ {branco}█{azul}░░ {branco}█▀{branco}▄ 　 ▀▀█ █{azul}░░{branco}█ █▄▄█
+  {azul}▒{branco}█▄▄█ ▀▀▀ {branco}▀{azul}░░{branco}▀ ▀▀▀ ▀{azul}░{branco}▀ 　 ▀▀▀ █▀▀▀ ▄▄▄█ {vermelho}By{branco}: Black spy{cinza}#0001{verde}"""{branco})
+
+    {cinza}● {vermelho}Logado as{branco}: Black spy{cinza}#0001 {branco}| {roxo}{t}
+''', 0.2)
+input('')
+os.system('cls' if os.name == 'nt' else 'clear')
+slowtype(f'''Escola opção Black spy:
+   {vermelho}---------------------------------------------------------------------------
+   {vermelho}| {roxo}[1] {branco}Nuke   {vermelho}|  {roxo}[4] {branco}Derrubar IPV4   {branco}|  {roxo}[7] {branco}Escolher um novo usúario {vermelho}|
+   {vermelho}| {roxo}[2] {branco}Clone  {vermelho}|  {roxo}[5] {branco}DDOS            {branco}|  {roxo}[8] {branco}Sair                     {vermelho}|
+   {vermelho}| {roxo}[3] {branco}DIv    {vermelho}|  {roxo}[6] {branco}Consuta         {branco}|                               {vermelho}|
+   {vermelho}---------------------------------------------------------------------------
+''', 0.2)
+input("")
