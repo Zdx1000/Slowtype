@@ -63,10 +63,10 @@ slowtype(f'''
 input('')
 os.system('cls' if os.name == 'nt' else 'clear')
 slowtype(f'''Escola opção Black spy:
-   {vermelho}---------------------------------------------------------------------------
+   {vermelho}---------------------------------------------------------------------
    {vermelho}| {roxo}[1] {branco}Nuke   {vermelho}|  {roxo}[4] {branco}Derrubar IPV4   {branco}|  {roxo}[7] {branco}Escolher um novo usúario {vermelho}|
    {vermelho}| {roxo}[2] {branco}Clone  {vermelho}|  {roxo}[5] {branco}DDOS            {branco}|  {roxo}[8] {branco}Sair                     {vermelho}|
    {vermelho}| {roxo}[3] {branco}DIv    {vermelho}|  {roxo}[6] {branco}Consuta         {branco}|                               {vermelho}|
-   {vermelho}---------------------------------------------------------------------------
+   {vermelho}---------------------------------------------------------------------
 ''', 0.2)
 input("")
